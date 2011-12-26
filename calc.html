@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Калькулятор на JavaScript</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+        <script type="text/javascript">
+
+       /*
+        * Функция подсчета 
+        */
+        function calc() {
+                        
+            var count1       = document.getElementById("count1"); 
+            var count2       = document.getElementById("count1"); 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+             
+                      
+            
+            rez = count1.value+count2.value;
+              
+
+            
+            result.innerHTML = rez;
+        }
+
+        </script>
+    </head>
+
+    <body background="bcground1.jpg">
+        <DIV ALIGN="center">
+        <h1>
+           Моя страничка 
+         </h1>
+         
+        <TABLE WIDTH="1000">
+        
+        <TR>
+        <TD ALIGN="center">  <A HREF="index.htm">Главная</A> </TD>
+        <TD ALIGN="center">  <A HREF="calc.html">Калькулятор</A> </TD>
+        
+        <TD ALIGN="center">  <A HREF="hobby.htm">Мои увлечения</A> </TD>
+        <TD ALIGN="center">  <A HREF="foto.htm">Фотографии</A> </TD>
+        <TD ALIGN="center"> 
+          <A HREF="kontact.htm">Контакты</A>
+         </TD>
+        </TR> 
+        </TABLE>  
+
+        <b> Калькулятор </b><br/>
+        
+
+        <input type="button" value="+" name="myButton" onClick="calc()">
+        <input type="button" value="-" name="myButton" onClick="calc()">
+        <input type="button" value="*" name="myButton" onClick="calc()">
+        <input type="button" value="/" name="myButton" onClick="calc()">
+
+        <br/>
+         <br/>
+
+         Первое число: <input type="text" id="count1" value="1" onchange="calc()" />
+         Второе число: <input type="text" id="count2" value="2" onchange="calc()" />
+        
+        <div>Результат: <span id="result">0</span> </div>
+
+    </body>
+</html>
